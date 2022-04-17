@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+      <button onclick="bai1();">Bai 1</button>
+      <button onclick="bai2();">Bai 2</button>
+      <button onclick="bai3()">Bai 3</button>
+</body>
+</html>
+<script>
+    function bai1(){
+        let n;
+        n =parseInt(prompt("Ban muon in bao nhieu so fibonaci:"));
+        let fn;
+        let f0=0;
+        let f1=1;
+        for(let i=6;i<n;i++){
+            if(i<2){
+                console.log(i)
+            }
+            else{
+                fn=f0+f1;
+                f0=f1;
+                f1=fn;
+                console.log(i)
+            }
+        }
+
+    }
+    function bai2(){
+        let n;
+        n = parseInt(prompt("ban muoon tinh gia thua cua "))
+        let kq=1;
+        for(let i=1;i<=n;i++){
+            kq *=i;
+        }
+        alert(kq)
+    }
+    function bai3(){
+
+    }
+</script>

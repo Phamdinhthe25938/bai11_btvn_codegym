@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <button onclick="ktnt();">Clcik me!</button>
+    <br>
+    <button onclick="innt();">Clcik demso!</button>
+</body>
+</html>
+<script>
+    let a;
+    a=8;
+    function ktnt(a){
+        if(a<2){
+            return 0;
+
+        }
+        else {
+            let i;
+            for( i=2;i<=Math.sqrt(a);i++){
+                if(a%i===0){
+                    return false;
+                }
+            }
+        }
+        return true;
+    }
+
+    function innt(){
+        let count=0;
+        let i=2;
+        while (count<20){
+            if(ktnt(i)){
+                console.log(i);
+                count++;
+            }
+            i++;
+        }
+    }
+</script>
